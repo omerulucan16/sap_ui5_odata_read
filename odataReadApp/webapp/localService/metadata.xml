@@ -1,0 +1,24 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZUB_HR_GW002_SRV" xml:lang="tr" sap:schema-version="1">
+			<EntityType Name="DogumGunleriBilgileri" sap:content-version="1">
+				<Key><PropertyRef Name="Sicilno"/></Key><Property Name="IDays" Type="Edm.Byte" Nullable="false" sap:unicode="false" sap:label="int" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Dogumgunu" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Tarih" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IWithphoto" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Gösterge" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Adi" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Adı" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Soyadi" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Soyadı" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Sicilno" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Personel no." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Dogumgun" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Versiyon numarası bileşenleri"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Dogumgunay" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Versiyon numarası bileşenleri"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Dogumgunyil" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false"
+					sap:label="Ayrt.tanımlanmamış alan, muhtemelen yama dzy.kullanılabilir" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/><Property Name="Cbolum" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Tanım" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SigortaliCalisan" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Karakter 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="UrlId" Type="Edm.String" Nullable="false" MaxLength="4096" sap:unicode="false" sap:label="URI" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Mesaj" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Mesaj" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZUB_HR_GW002_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="DogumGunleriBilgileriSet" EntityType="ZUB_HR_GW002_SRV.DogumGunleriBilgileri" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZUB_HR_GW002_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZUB_HR_GW002_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
